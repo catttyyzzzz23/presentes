@@ -1,0 +1,49 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cartões</title>
+        <link rel="icon" href="./Imagens/ppp.webp" type="image/webp">
+        <link rel="stylesheet" href="ani.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <nav>
+            <div class="wrapper">
+              <ul class="nav-links">
+                <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="presentes.html">Presentes</a></li>
+               <li><a href="cartoes.html">Cartões</a></li>
+          </nav>
+        <div class="gift-gallery">
+            <div class="gift-item">
+                <img src="./Imagens/card.jpeg" alt="Presente 1" onclick="expandImage(this)">
+                <p>DOUGLAS</p>
+            </div>
+            <div class="gift-item">
+                <img src="./Imagens/pull.jpeg" alt="Presente 2" onclick="expandImage(this)">
+                <p>PULL</p>
+            </div>
+            <div class="gift-item">
+                <img src="./Imagens/h&M.jpeg" alt="Presente 3" onclick="expandImage(this)">
+                <p>H&M</p>
+            </div>
+            <div class="gift-item">
+                <img src="./Imagens/rituals.jpeg" alt="Presente 4" onclick="expandImage(this)">
+                <p>Rituals</p>
+            </div>
+            <div class="gift-item">
+                <img src="./Imagens/fnac.jpeg" alt="Presente 4" onclick="expandImage(this)">
+                <p>Fnac</p>
+                <p>Tenho cartão aderente</p>
+            </div>
+            
+        </div>  
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="expanded-img">
+        </div>      
+    </body>
+</html>
